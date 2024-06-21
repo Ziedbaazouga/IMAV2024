@@ -1,8 +1,18 @@
 # Use an ARM-based Debian image suitable for Raspberry Pi
 FROM arm32v7/debian:buster-slim
 
-# Install ROS (adjust according to your ROS version and distribution)
+# Install necessary packages for installing ROS
 RUN apt-get update && \
+    apt-get install -y \
+    curl \
+    gnupg2 \
+    lsb-release \
+    && rm -rf /var/lib/apt/lists/*
+
+# Setup sources.list and install ROS
+RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add - && \
+    echo "deb [arch=armhf] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list && \
+    apt-get update && \
     apt-get install -y \
     ros-<your-ros-distro>-ros-base \
     ros-<your-ros-distro>-<additional-ros-packages> \
