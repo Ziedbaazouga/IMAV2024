@@ -1,0 +1,23 @@
+[0.014s] Invoking command in '/home/user/drone/build/ultrasonic_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble /usr/bin/cmake --build /home/user/drone/build/ultrasonic_sensor -- -j12 -l12
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target ultrasonic_sensor_node[0m
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o[0m
+[2.036s] [01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:25:8:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KUltrasonicSensorNode::[m[K’ on member ‘[01m[Kdistance[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.036s]    25 |   void [01;31m[KUltrasonicSensorNode[m[K::distance(int timeout)
+[2.036s]       |        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.036s] [01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:46:6:[m[K [01;31m[Kerror: [m[Kextra qualification ‘[01m[KUltrasonicSensorNode::[m[K’ on member ‘[01m[KrecordPulseLength[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.036s]    46 | void [01;31m[KUltrasonicSensorNode[m[K::recordPulseLength()
+[2.037s]       |      [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.039s] [01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:54:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid UltrasonicSensorNode::recordPulseLength()[m[K’ cannot be overloaded with ‘[01m[Kvoid UltrasonicSensorNode::recordPulseLength()[m[K’
+[2.040s]    54 |     void [01;31m[KrecordPulseLength[m[K();
+[2.040s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.040s] [01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:46:6:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid UltrasonicSensorNode::recordPulseLength()[m[K’
+[2.040s]    46 | void [01;36m[KUltrasonicSensorNode[m[K::recordPulseLength()
+[2.040s]       |      [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.046s] [01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:[m[K In constructor ‘[01m[KUltrasonicSensorNode::UltrasonicSensorNode()[m[K’:
+[2.046s] [01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:22:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[2.046s]    22 |   [01;31m[K}[m[K
+[2.046s]       |   [01;31m[K^[m[K
+[2.728s] gmake[2]: *** [CMakeFiles/ultrasonic_sensor_node.dir/build.make:76: CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o] Error 1
+[2.729s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ultrasonic_sensor_node.dir/all] Error 2
+[2.729s] gmake: *** [Makefile:146: all] Error 2
+[2.731s] Invoked command in '/home/user/drone/build/ultrasonic_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble /usr/bin/cmake --build /home/user/drone/build/ultrasonic_sensor -- -j12 -l12

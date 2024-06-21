@@ -1,0 +1,14 @@
+[0.011s] Invoking command in '/home/user/drone/build/ultrasonic_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble /usr/bin/cmake --build /home/user/drone/build/ultrasonic_sensor -- -j12 -l12
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target ultrasonic_sensor_node[0m
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o[0m
+[3.599s] [100%] [32m[1mLinking CXX executable ultrasonic_sensor_node[0m
+[3.833s] /usr/bin/ld: CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o: in function `UltrasonicSensorNode::UltrasonicSensorNode()':
+[3.833s] ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x155): undefined reference to `pinMode'
+[3.833s] /usr/bin/ld: ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x16e): undefined reference to `pinMode'
+[3.833s] /usr/bin/ld: ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x187): undefined reference to `digitalWrite'
+[3.833s] /usr/bin/ld: ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x191): undefined reference to `delay'
+[3.841s] collect2: error: ld returned 1 exit status
+[3.842s] gmake[2]: *** [CMakeFiles/ultrasonic_sensor_node.dir/build.make:175: ultrasonic_sensor_node] Error 1
+[3.843s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ultrasonic_sensor_node.dir/all] Error 2
+[3.843s] gmake: *** [Makefile:146: all] Error 2
+[3.846s] Invoked command in '/home/user/drone/build/ultrasonic_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble /usr/bin/cmake --build /home/user/drone/build/ultrasonic_sensor -- -j12 -l12

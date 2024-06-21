@@ -1,0 +1,151 @@
+[0.000000] (-) TimerEvent: {}
+[0.000829] (ultrasonic_sensor) JobQueued: {'identifier': 'ultrasonic_sensor', 'dependencies': OrderedDict()}
+[0.000896] (ultrasonic_sensor) JobStarted: {'identifier': 'ultrasonic_sensor'}
+[0.008762] (ultrasonic_sensor) JobProgress: {'identifier': 'ultrasonic_sensor', 'progress': 'cmake'}
+[0.009772] (ultrasonic_sensor) Command: {'cmd': ['/usr/bin/cmake', '/home/user/drone/src/ultrasonic_sensor', '-DCMAKE_INSTALL_PREFIX=/home/user/drone/install/ultrasonic_sensor'], 'cwd': '/home/user/drone/build/ultrasonic_sensor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/drone/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_wstuto/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('NAME', 'LAPTOP-D63O2FHR'), ('WSL_INTEROP', '/run/WSL/417_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/user/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/jdk-18.0.2/bin:/mnt/c/mingw64/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/opencv/x64/vc16/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/zaydo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zaydo/AppData/Local/GitHubDesktop/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/dev/ros2_galactic/bin:/mnt/c/ros2-humble-20240222-windows-release-amd64/ros2-windows/bin/:/mnt/c/Program Files/JetBrains/CLion 2024.1.2/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/user/ros2_wstuto/install/tuto_controller:/home/user/ros2_wstuto/install/tuto:/home/user/ros2_wstuto/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/drone/build/ultrasonic_sensor'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/ros2_wstuto/install/tuto/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_wstuto/install/tuto_controller:/home/user/ros2_wstuto/install/my_robot_controller:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[0.030282] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099660] (-) TimerEvent: {}
+[0.131815] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199784] (-) TimerEvent: {}
+[0.270513] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.272385] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.281264] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.291102] (ultrasonic_sensor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.299895] (-) TimerEvent: {}
+[0.303533] (ultrasonic_sensor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.351743] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.352862] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400360] (-) TimerEvent: {}
+[0.501186] (-) TimerEvent: {}
+[0.601658] (-) TimerEvent: {}
+[0.702240] (-) TimerEvent: {}
+[0.802582] (-) TimerEvent: {}
+[0.902978] (-) TimerEvent: {}
+[1.003336] (-) TimerEvent: {}
+[1.103715] (-) TimerEvent: {}
+[1.204083] (-) TimerEvent: {}
+[1.304523] (-) TimerEvent: {}
+[1.404880] (-) TimerEvent: {}
+[1.505266] (-) TimerEvent: {}
+[1.605637] (-) TimerEvent: {}
+[1.706035] (-) TimerEvent: {}
+[1.806373] (-) TimerEvent: {}
+[1.906733] (-) TimerEvent: {}
+[2.007125] (-) TimerEvent: {}
+[2.107528] (-) TimerEvent: {}
+[2.207977] (-) TimerEvent: {}
+[2.308368] (-) TimerEvent: {}
+[2.408751] (-) TimerEvent: {}
+[2.509262] (-) TimerEvent: {}
+[2.609595] (-) TimerEvent: {}
+[2.709962] (-) TimerEvent: {}
+[2.810287] (-) TimerEvent: {}
+[2.910659] (-) TimerEvent: {}
+[3.011022] (-) TimerEvent: {}
+[3.111409] (-) TimerEvent: {}
+[3.211758] (-) TimerEvent: {}
+[3.312085] (-) TimerEvent: {}
+[3.412440] (-) TimerEvent: {}
+[3.512808] (-) TimerEvent: {}
+[3.613207] (-) TimerEvent: {}
+[3.713567] (-) TimerEvent: {}
+[3.813891] (-) TimerEvent: {}
+[3.914261] (-) TimerEvent: {}
+[4.014672] (-) TimerEvent: {}
+[4.115337] (-) TimerEvent: {}
+[4.216122] (-) TimerEvent: {}
+[4.316468] (-) TimerEvent: {}
+[4.416808] (-) TimerEvent: {}
+[4.517154] (-) TimerEvent: {}
+[4.617912] (-) TimerEvent: {}
+[4.718274] (-) TimerEvent: {}
+[4.818627] (-) TimerEvent: {}
+[4.918996] (-) TimerEvent: {}
+[5.019438] (-) TimerEvent: {}
+[5.023547] (ultrasonic_sensor) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.119566] (-) TimerEvent: {}
+[5.154443] (ultrasonic_sensor) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.219708] (-) TimerEvent: {}
+[5.313409] (ultrasonic_sensor) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.319826] (-) TimerEvent: {}
+[5.323734] (ultrasonic_sensor) StdoutLine: {'line': b'-- Generating done\n'}
+[5.324977] (ultrasonic_sensor) StdoutLine: {'line': b'-- Build files have been written to: /home/user/drone/build/ultrasonic_sensor\n'}
+[5.332295] (ultrasonic_sensor) CommandEnded: {'returncode': 0}
+[5.333976] (ultrasonic_sensor) JobProgress: {'identifier': 'ultrasonic_sensor', 'progress': 'build'}
+[5.334094] (ultrasonic_sensor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/user/drone/build/ultrasonic_sensor', '--', '-j12', '-l12'], 'cwd': '/home/user/drone/build/ultrasonic_sensor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'user'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/user'), ('OLDPWD', '/home/user/drone/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/user/ros2_wstuto/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'user'), ('NAME', 'LAPTOP-D63O2FHR'), ('WSL_INTEROP', '/run/WSL/417_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/user/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python38/Scripts/:/mnt/c/Python38/:/mnt/c/jdk-18.0.2/bin:/mnt/c/mingw64/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MATLAB/R2023b/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/OpenSSL-Win64/bin/:/mnt/c/opencv/opencv/x64/vc16/bin:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/zaydo/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/zaydo/AppData/Local/GitHubDesktop/bin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/dev/ros2_galactic/bin:/mnt/c/ros2-humble-20240222-windows-release-amd64/ros2-windows/bin/:/mnt/c/Program Files/JetBrains/CLion 2024.1.2/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/user/ros2_wstuto/install/tuto_controller:/home/user/ros2_wstuto/install/tuto:/home/user/ros2_wstuto/install/my_robot_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/user/drone/build/ultrasonic_sensor'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/user/ros2_wstuto/install/tuto/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/user/ros2_wstuto/install/tuto_controller:/home/user/ros2_wstuto/install/my_robot_controller:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble'), ('WSLENV', '')]), 'shell': False}
+[5.369329] (ultrasonic_sensor) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o\x1b[0m\n'}
+[5.419963] (-) TimerEvent: {}
+[5.520300] (-) TimerEvent: {}
+[5.620616] (-) TimerEvent: {}
+[5.720978] (-) TimerEvent: {}
+[5.821334] (-) TimerEvent: {}
+[5.921736] (-) TimerEvent: {}
+[6.022124] (-) TimerEvent: {}
+[6.122717] (-) TimerEvent: {}
+[6.223161] (-) TimerEvent: {}
+[6.323565] (-) TimerEvent: {}
+[6.424084] (-) TimerEvent: {}
+[6.524578] (-) TimerEvent: {}
+[6.625158] (-) TimerEvent: {}
+[6.725587] (-) TimerEvent: {}
+[6.826074] (-) TimerEvent: {}
+[6.926469] (-) TimerEvent: {}
+[7.026849] (-) TimerEvent: {}
+[7.127237] (-) TimerEvent: {}
+[7.227657] (-) TimerEvent: {}
+[7.328120] (-) TimerEvent: {}
+[7.428521] (-) TimerEvent: {}
+[7.528891] (-) TimerEvent: {}
+[7.629282] (-) TimerEvent: {}
+[7.650450] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:10:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KHCSR04\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.650659] (ultrasonic_sensor) StderrLine: {'line': b'   10 |   \x1b[01;31m\x1b[KHCSR04\x1b[m\x1b[K() : Node("ultrasonic_sensor_node")\n'}
+[7.650712] (ultrasonic_sensor) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.651025] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:25:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHCSR04\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[7.651156] (ultrasonic_sensor) StderrLine: {'line': b'   25 |   void \x1b[01;31m\x1b[KHCSR04\x1b[m\x1b[K::distance(int timeout)\n'}
+[7.651238] (ultrasonic_sensor) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.651296] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:46:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHCSR04\x1b[m\x1b[K\xe2\x80\x99 is not a class, namespace, or enumeration\n'}
+[7.651350] (ultrasonic_sensor) StderrLine: {'line': b'   46 | void \x1b[01;31m\x1b[KHCSR04\x1b[m\x1b[K::recordPulseLength()\n'}
+[7.651428] (ultrasonic_sensor) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.654531] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:54:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid UltrasonicSensorNode::recordPulseLength()\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid UltrasonicSensorNode::recordPulseLength()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.654643] (ultrasonic_sensor) StderrLine: {'line': b'   54 |     void \x1b[01;31m\x1b[KrecordPulseLength\x1b[m\x1b[K();\n'}
+[7.654704] (ultrasonic_sensor) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.654768] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:46:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid UltrasonicSensorNode::recordPulseLength()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.654822] (ultrasonic_sensor) StderrLine: {'line': b'   46 | void \x1b[01;36m\x1b[KHCSR04\x1b[m\x1b[K::recordPulseLength()\n'}
+[7.654871] (ultrasonic_sensor) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.655125] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint UltrasonicSensorNode::HCSR04()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.655222] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:10:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Konly constructors take member initializers\n'}
+[7.655297] (ultrasonic_sensor) StderrLine: {'line': b'   10 |   HCSR04() : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("ultrasonic_sensor_node")\n'}
+[7.655353] (ultrasonic_sensor) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.657185] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:22:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.657259] (ultrasonic_sensor) StderrLine: {'line': b'   22 |   \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[7.657309] (ultrasonic_sensor) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.657351] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:22:3:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kno return statement in function returning non-void [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.660946] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.661056] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:67:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHCSR04\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.661124] (ultrasonic_sensor) StderrLine: {'line': b'   67 |   rclcpp::spin(std::make_shared<\x1b[01;31m\x1b[KHCSR04\x1b[m\x1b[K>());\n'}
+[7.661188] (ultrasonic_sensor) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[7.661239] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:67:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kmake_shared<<expression error> >()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.661287] (ultrasonic_sensor) StderrLine: {'line': b'   67 |   rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<HCSR04>()\x1b[m\x1b[K);\n'}
+[7.661335] (ultrasonic_sensor) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[7.661879] (ultrasonic_sensor) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[7.661974] (ultrasonic_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[7.662035] (ultrasonic_sensor) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:1\x1b[m\x1b[K:\n'}
+[7.662095] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class ... _Args> std::shared_ptr<_Tp> std::make_shared(_Args&& ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.662147] (ultrasonic_sensor) StderrLine: {'line': b'  875 |     \x1b[01;36m\x1b[Kmake_shared\x1b[m\x1b[K(_Args&&... __args)\n'}
+[7.662197] (ultrasonic_sensor) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.662247] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:875:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[7.662298] (ultrasonic_sensor) StderrLine: {'line': b'\x1b[01m\x1b[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:67:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[7.662353] (ultrasonic_sensor) StderrLine: {'line': b'   67 |   rclcpp::spin(\x1b[01;31m\x1b[Kstd::make_shared<HCSR04>()\x1b[m\x1b[K);\n'}
+[7.662405] (ultrasonic_sensor) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[7.729513] (-) TimerEvent: {}
+[7.829995] (-) TimerEvent: {}
+[7.930561] (-) TimerEvent: {}
+[8.031181] (-) TimerEvent: {}
+[8.131597] (-) TimerEvent: {}
+[8.231981] (-) TimerEvent: {}
+[8.284957] (ultrasonic_sensor) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ultrasonic_sensor_node.dir/build.make:76: CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o] Error 1\n'}
+[8.285271] (ultrasonic_sensor) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ultrasonic_sensor_node.dir/all] Error 2\n'}
+[8.285431] (ultrasonic_sensor) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.286917] (ultrasonic_sensor) CommandEnded: {'returncode': 2}
+[8.310393] (ultrasonic_sensor) JobEnded: {'identifier': 'ultrasonic_sensor', 'rc': 2}
+[8.311821] (-) EventReactorShutdown: {}

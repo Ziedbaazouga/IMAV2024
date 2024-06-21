@@ -1,0 +1,5 @@
+source;share/ultrasonic_sensor/local_setup.bash
+source;share/ultrasonic_sensor/local_setup.dsv
+source;share/ultrasonic_sensor/local_setup.ps1
+source;share/ultrasonic_sensor/local_setup.sh
+source;share/ultrasonic_sensor/local_setup.zsh

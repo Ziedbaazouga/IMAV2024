@@ -1,0 +1,7 @@
+[01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:[m[K In constructor ‘[01m[KUltrasonicSensorNode::UltrasonicSensorNode()[m[K’:
+[01m[K/home/user/drone/src/ultrasonic_sensor/src/ultrasonic_sensor_node.cpp:22:3:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   22 |   [01;31m[K}[m[K
+      |   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/ultrasonic_sensor_node.dir/build.make:76: CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ultrasonic_sensor_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

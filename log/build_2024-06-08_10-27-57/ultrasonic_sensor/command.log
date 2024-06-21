@@ -1,0 +1,2 @@
+Invoking command in '/home/user/drone/build/ultrasonic_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble /usr/bin/cmake /home/user/drone/src/ultrasonic_sensor -DCMAKE_INSTALL_PREFIX=/home/user/drone/install/ultrasonic_sensor
+Invoked command in '/home/user/drone/build/ultrasonic_sensor' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/ros2_wstuto/install/tuto:/opt/ros/humble /usr/bin/cmake /home/user/drone/src/ultrasonic_sensor -DCMAKE_INSTALL_PREFIX=/home/user/drone/install/ultrasonic_sensor

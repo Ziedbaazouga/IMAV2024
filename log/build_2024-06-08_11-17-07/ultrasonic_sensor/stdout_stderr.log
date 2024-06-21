@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target ultrasonic_sensor_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ultrasonic_sensor_node[0m
+/usr/bin/ld: CMakeFiles/ultrasonic_sensor_node.dir/src/ultrasonic_sensor_node.cpp.o: in function `UltrasonicSensorNode::UltrasonicSensorNode()':
+ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x155): undefined reference to `pinMode'
+/usr/bin/ld: ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x16e): undefined reference to `pinMode'
+/usr/bin/ld: ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x187): undefined reference to `digitalWrite'
+/usr/bin/ld: ultrasonic_sensor_node.cpp:(.text._ZN20UltrasonicSensorNodeC2Ev[_ZN20UltrasonicSensorNodeC5Ev]+0x191): undefined reference to `delay'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/ultrasonic_sensor_node.dir/build.make:175: ultrasonic_sensor_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/ultrasonic_sensor_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
