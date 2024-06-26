@@ -16,7 +16,7 @@ RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt
 # Update the package list and install ROS 2 Humble
 RUN apt-get update && \
     apt-get install -y \
-    ros-noetic-ros-base \
+    ros-humble-ros-base \
     && rm -rf /var/lib/apt/lists/*
 
 # Install necessary packages for compiling and running your C++ code
@@ -29,8 +29,8 @@ RUN apt-get update && \
 
 # Source ROS 2 setup script
 SHELL ["/bin/bash", "-c"]
-RUN echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-RUN source /opt/ros/noetic/setup.bash
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN source /opt/ros/humble/setup.bash
 
 # Set the working directory in the container
 WORKDIR /app
