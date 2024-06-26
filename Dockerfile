@@ -9,13 +9,14 @@ RUN apt-get update && \
     lsb-release \
     && rm -rf /var/lib/apt/lists/*
 
-# Setup sources.list and install ROS
-RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | apt-key add - && \
-    echo "deb [arch=armhf] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list && \
-    apt-get update && \
+# Add the ROS 2 apt repository
+RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt-key add - && \
+    echo "deb [arch=arm64] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list
+
+# Update the package list and install ROS 2 Humble
+RUN apt-get update && \
     apt-get install -y \
-    ros-<your-ros-distro>-ros-base \
-    ros-<your-ros-distro>-<additional-ros-packages> \
+    ros-humble-ros-base \
     && rm -rf /var/lib/apt/lists/*
 
 # Install necessary packages for compiling and running your C++ code
@@ -25,6 +26,11 @@ RUN apt-get update && \
     cmake \
     libpigpio-dev \
     && rm -rf /var/lib/apt/lists/*
+
+# Source ROS 2 setup script
+SHELL ["/bin/bash", "-c"]
+RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+RUN source /opt/ros/humble/setup.bash
 
 # Set the working directory in the container
 WORKDIR /app
