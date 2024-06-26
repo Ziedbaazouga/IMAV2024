@@ -11,8 +11,8 @@ RUN apt-get update && \
 
 # Add the ROS 2 apt repository
 RUN curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | apt-key add - && \
-    echo "deb [arch=arm64] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list
-
+    echo "deb [arch=armhf] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list
+    
 # Update the package list and install ROS 2 Humble
 RUN apt-get update && \
     apt-get install -y \
