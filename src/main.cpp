@@ -8,7 +8,7 @@ void testUltrasoundSensor()
 {
     rclcpp::init(0, nullptr);
     rclcpp::spin(std::make_shared<UltrasonicSensorNode>());
-    rclcpp::shutdown();
+   // rclcpp::shutdown();
 }
 
 void testMagnetController()
@@ -23,7 +23,7 @@ void testMagnetController()
 int main(int argc, char *argv[])
 {
     testUltrasoundSensor();
-    testMagnetController();
+   // testMagnetController();
 
     return 0;
 }
