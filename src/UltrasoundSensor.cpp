@@ -41,6 +41,8 @@ void  UltrasonicSensorNode :: distance(int timeout)
     message.max_range = 4.0; // Example value, 4 m
     message.range =  distanceMeters;
     publisher_->publish(message);
+
+    std::cout<<distanceMeters<<std::endl;
 }
 
 void UltrasonicSensorNode :: recordPulseLength()
